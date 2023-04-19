@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: Step one
-        run: Starting 
+        run: echo Starting 
       
       - name: Execute contaienr
         run: docker run -d alpine:3.17.1 sleep 5
